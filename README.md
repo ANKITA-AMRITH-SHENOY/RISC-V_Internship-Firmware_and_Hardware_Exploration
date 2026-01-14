@@ -1,1 +1,1 @@
-# new-to-embedded-firmware
+# VSDSquadron Mini Firmware Foundation
