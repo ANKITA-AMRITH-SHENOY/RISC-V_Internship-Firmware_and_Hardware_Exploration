@@ -9,6 +9,9 @@ This is a firmware library because:
 2. It interacts with (or simulates) hardware
 3. It is used by application code ```main.c```
 
+<img width="839" height="357" alt="image" src="https://github.com/user-attachments/assets/3f0e1e23-b31e-4802-95b7-83cc6dd1a661" />
+
+
 Example:
 ```
 void gpio_init(int pin, int direction);
@@ -36,6 +39,34 @@ The API tells:
 3. What they return
 
 **Note:API is part of the firmware library, but not the whole thing.**
+
+---
+
+## Embedded System: Without API vs With API
+
+### <ins>Without API</ins>
+
+Application Code
+
+↓
+
+Direct Hardware Register Access
+
+↓
+
+Hardware (GPIO Pins)
+
+### <ins>With API</ins>
+
+Application Code (main.c)
+
+↓
+
+API / Driver Functions (gpio.h / gpio.c)
+
+↓
+
+Hardware (GPIO Pins)
 
 ---
 
